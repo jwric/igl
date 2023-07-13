@@ -89,7 +89,7 @@
   #define IGL_PLATFORM_LINUX 0
   #define IGL_PLATFORM_EMSCRIPTEN 0
 // Linux
-#elif defined(__linux__)
+#elif defined(__linux__) && !defined(__EMSCRIPTEN__)
   #define IGL_PLATFORM_WIN 0
   #define IGL_PLATFORM_APPLE 0
   #define IGL_PLATFORM_IOS 0
